@@ -1,0 +1,15 @@
+# Copy this file to terraform.tfvars and fill in your own values.
+# DO NOT put private keys, passwords, or tokens in GitHub.
+
+aws_region        = "ap-south-1"
+availability_zone = "ap-south-1a"
+student_name      = "YOUR NAME"
+
+# Replace with your current public IPv4 address.
+my_public_ip_cidr = "YOUR.PUBLIC.IP.ADDRESS/32"
+
+# Put ONLY your SSH public key here, not the .pem private key.
+# Example: ssh-rsa AAAA... or ssh-ed25519 AAAA...
+public_key = "YOUR PUBLIC KEY"
+
+instance_type = "t3.micro"

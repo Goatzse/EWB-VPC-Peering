@@ -1,0 +1,27 @@
+# EWB AWS VPC Peering - useful commands
+
+# From the terraform folder:
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+
+# After deployment:
+terraform output
+
+# Destroy everything created by Terraform:
+terraform destroy
+
+# SSH through the bastion (after configuring ~/.ssh/config):
+ssh ewb-app-a
+ssh ewb-app-b
+
+# Test VPC peering from App-A:
+ping -c 4 10.20.1.10
+
+# Test reverse direction from App-B:
+ping -c 4 10.10.2.10
+
+# Check the App-B private address:
+hostname -I
